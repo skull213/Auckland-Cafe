@@ -1,0 +1,328 @@
+h1 {
+  font-family: 'Lobster Two', cursive; }
+
+p {
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+a {
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+.error {
+  color: red;
+  font-size: 1em; }
+
+.site-nav {
+  background: #76a99a;
+  color: #1a1b18;
+  max-height: 65px;
+  position: relative; }
+  .site-nav a {
+    text-decoration: none;
+    font-size: 1em; }
+  .site-nav .logo {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.7em;
+    height: 40px;
+    line-height: 1.55em;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    z-index: 0;
+    position: relative; }
+    .site-nav .logo a {
+      color: #efefef; }
+    .site-nav .logo :hover:before {
+      background: #292938; }
+    .site-nav .logo :before {
+      content: "";
+      background: #76A99A;
+      z-index: -1;
+      /*POSITION*/
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+  .site-nav .menu {
+    background: #76A99A;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #d9d9d9;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*POSITION*/
+    position: absolute;
+    top: 55px;
+    right: 0;
+    left: 0; }
+    .site-nav .menu a {
+      color: white;
+      border-bottom: 1px solid #d9d9d9;
+      font-weight: bold;
+      display: block;
+      padding: 15px;
+      font-size: 1.3em; }
+    .site-nav .menu :hover {
+      background: #292938;
+      color: #efefef; }
+  .site-nav .navBars {
+    display: inline-block;
+    font-size: 1.7em;
+    line-height: 1.5em;
+    float: right;
+    /*USER SELECTION*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none; }
+
+#toggle {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -99999px; }
+
+#toggle:checked ~ nav .menu {
+  display: block; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px; }
+
+section:nth-child(1) {
+  height: 100vh;
+  flex: 0 0 100%;
+  background-image: linear-gradient(transparent, transparent), url(../img/pic1.jpg);
+  background-position: 30% 30%;
+  background-size: cover; }
+  section:nth-child(1) div {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center; }
+    section:nth-child(1) div p {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 1rem;
+      white-space: nowrap; }
+    section:nth-child(1) div p {
+      margin: 0;
+      font-size: 1.5rem; }
+    section:nth-child(1) div a {
+      margin: 0;
+      font-size: 2em;
+      color: white;
+      display: inline-block;
+      padding: 0.3em;
+      margin-top: 3em; }
+
+section:nth-child(2) {
+  min-height: 40em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 0 content;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/pic.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  section:nth-child(2) h1 {
+    width: 100%;
+    text-align: center;
+    background-color: #76A99A;
+    margin-top: 0;
+    padding: 1em 0 1em 0;
+    color: white; }
+
+section:nth-child(3) {
+  display: flex;
+  flex: 0 0 content;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  section:nth-child(3) div {
+    background-color: #76A99A; }
+    section:nth-child(3) div h1 {
+      width: 100%;
+      text-align: center;
+      background-color: #76A99A;
+      margin-top: 0;
+      padding: 1em 0 1em 0;
+      color: white; }
+    section:nth-child(3) div p {
+      text-align: center;
+      color: white; }
+
+section:nth-child(4) {
+  min-height: 40em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/pic.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  section:nth-child(4) .pure-button-primary {
+    background-color: #76A99A; }
+  section:nth-child(4) h1 {
+    width: 100%;
+    text-align: center;
+    background-color: #B1A48A;
+    margin-top: 0;
+    padding: 1em 0 1em 0;
+    color: white;
+    height: 3em; }
+  section:nth-child(4) div p {
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin: 0 auto 0 auto; }
+
+section:nth-child(5) {
+  display: flex;
+  height: 50em;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #FFFFFF; }
+  section:nth-child(5) .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex; }
+    section:nth-child(5) .social i {
+      color: #B1A48A; }
+    section:nth-child(5) .social p {
+      width: 100%; }
+  section:nth-child(5) h1 {
+    align-self: flex-start;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    height: 3em;
+    padding: 1em 0 1em 0;
+    min-width: 100%;
+    background-color: #76A99A;
+    margin: 0; }
+  section:nth-child(5) #map {
+    width: 100%;
+    height: 20em;
+    border: 1px solid #76A99A; }
+  section:nth-child(5) p {
+    text-align: center; }
+
+footer {
+  display: flex;
+  background-color: #B1A48A;
+  min-height: 10em; }
+  footer p {
+    text-align: center; }
+  footer div {
+    width: 100%;
+    height: 5em;
+    text-align: center; }
+    footer div i {
+      color: white; }
+
+/* Regular smart phones, including iPhone 6 + with 414px viewport! */
+/* Regular Tablets from 480 to 800px including Galaxy tablets - 768px is only good for iPad */
+@media screen and (min-width: 30em) {
+  section:nth-child(5) {
+    display: flex; }
+    section:nth-child(5) .social {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      justify-content: center;
+      width: 100%;
+      height: 3em; }
+      section:nth-child(5) .social p {
+        width: 30%; }
+    section:nth-child(5) #map {
+      width: 100%;
+      height: 25em; } }
+
+/* Desktops and Laptops */
+@media screen and (min-width: 50em) {
+  section:nth-child(1) {
+    height: 100vh; }
+  .site-nav {
+    min-height: 5.3em; }
+    .site-nav .navBars {
+      display: none; }
+    .site-nav .container {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .site-nav .logo {
+      margin: 10px 0; }
+    .site-nav .menu {
+      display: block;
+      box-shadow: none;
+      border: none;
+      float: right;
+      /*POSITION*/
+      position: static; }
+      .site-nav .menu li {
+        padding-top: 0.6em;
+        display: inline-block; }
+      .site-nav .menu a {
+        border: none;
+        padding: 20px 10px; }
+  section:nth-child(2) h1.hide {
+    visibility: hidden;
+    color: white; }
+  section:nth-child(3) {
+    display: flex;
+    flex: 0 0 content;
+    flex-direction: row; }
+    section:nth-child(3) div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #76A99A;
+      width: 50%; }
+      section:nth-child(3) div h1 {
+        width: 100%; }
+      section:nth-child(3) div p {
+        font-size: 1.2em;
+        width: 80%;
+        margin: 0 auto 0 auto; }
+    section:nth-child(3) .flex ul li {
+      background-color: white; }
+  section:nth-child(4) {
+    height: 40em; }
+    section:nth-child(4) form {
+      display: flex;
+      justify-content: center;
+      width: 50%; }
+      section:nth-child(4) form fieldset {
+        width: 50%; }
+        section:nth-child(4) form fieldset input {
+          width: 100%;
+          height: 4em; }
+    section:nth-child(4) div {
+      width: 50%;
+      margin-top: 0; }
+      section:nth-child(4) div p {
+        font-size: 1.2em; }
+  section:nth-child(5) {
+    display: flex;
+    height: 60em; }
+    section:nth-child(5) .social {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      justify-content: center;
+      width: 100%;
+      height: 3em; }
+      section:nth-child(5) .social p {
+        width: 30%; }
+    section:nth-child(5) #map {
+      width: 100%;
+      height: 30em; } }
